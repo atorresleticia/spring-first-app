@@ -1,2 +1,2 @@
-# spring-first-app
-First app from Spring for beginners course
+# Spring First APp
+First app from Spring for beginners course, using XML config file
