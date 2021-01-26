@@ -2,9 +2,9 @@ package com.local.spring.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.local.spring.springdemo.services.OrderType;
+import com.local.spring.springdemo.order.DepositOrderType;
 
-public class HelloSpringApp {
+public class DepositSpringApp {
 
 	public static void main(String[] args) {
 		
@@ -13,13 +13,14 @@ public class HelloSpringApp {
 		
 		//retrieve bean from container
 		String order = "myDepositOrderType";
+		DepositOrderType depositOrder = context.getBean(order, DepositOrderType.class);
 		
-		OrderType orderType = context.getBean(order, OrderType.class);
-		
-		System.out.println(orderType.getType());
-		System.out.println(orderType.getDailyFortune());
+		System.out.println(depositOrder.getType());
+		System.out.println(depositOrder.getDailyFortune());
+		System.out.println(depositOrder.getEmail());
 
 		context.close();
+
 	}
 
 }
