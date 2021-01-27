@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.local.spring.springdemo.order.DepositOrderType;
 
-public class DepositSpringApp {
+public class SetterSpringApp {
 
 	public static void main(String[] args) {
 		

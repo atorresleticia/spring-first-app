@@ -7,6 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- loading the properties file -->
+	<context:property-placeholder location="classpath:order.properties"/>
+
 	<!-- Define your beans here -->
 	<bean id="myOrderType" class="com.local.spring.springdemo.order.TransferOrderType">
 		<!-- set constructor injections -->
@@ -19,7 +22,7 @@
 		<property name="fortuneService" ref="myFortune"/>
 		
 		<!-- inject property values -->
-		<property name="email" value="teste@gmail.com"/>
+		<property name="email" value="${order.email}"/>
 	</bean>
 
 	<bean id="myFortune"
