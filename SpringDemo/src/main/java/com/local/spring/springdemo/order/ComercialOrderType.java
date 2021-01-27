@@ -22,4 +22,12 @@ public class ComercialOrderType implements OrderType {
 		return "Just do it! " + fortuneService.getFortune();
 	}
 	
+	public void sayHelloOnStartup() {
+		System.out.println(">>>>>>>>>>>>> Hello!");
+	}
+
+	public void sayGoodbyeOnCleanup() {
+		System.out.println(">>>>>>>>>>>>> Goodbye!");
+	}
+	
 }
