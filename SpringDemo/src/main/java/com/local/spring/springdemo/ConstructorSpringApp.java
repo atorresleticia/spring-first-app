@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.local.spring.springdemo.services.OrderType;
 
-public class HelloSpringApp {
+public class ConstructorSpringApp {
 
 	public static void main(String[] args) {
 		
